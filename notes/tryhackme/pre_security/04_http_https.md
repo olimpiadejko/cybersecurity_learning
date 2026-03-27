@@ -123,6 +123,28 @@ Cookies:
 
 ---
 
+## HTML Injection
+
+HTML Injection to luka w zabezpieczeniach, która występuje, gdy aplikacja wyświetla niefiltrowane dane od użytkownika.
+
+W efekcie:
+- użytkownik może wstrzyknąć własny kod HTML (lub JavaScript)
+- przeglądarka traktuje dane jako kod, a nie tekst
+- możliwa jest zmiana treści strony lub wykonanie złośliwego kodu
+
+---
+
+### How to prevent:
+
+1. **Używaj `textContent` zamiast `innerHTML`**  
+   - `innerHTML` → interpretuje dane jako kod  
+   - `textContent` → traktuje dane jako zwykły tekst  
+
+2. **Sanityzacja danych (czyszczenie inputu)**  
+   Przykład: name.replace(/</g, "<").replace(/>/g, ">");
+
+---
+   
 ## Example Attacks
 
 - SQL Injection:
@@ -142,4 +164,4 @@ Cookies:
 - URL zawiera wiele elementów (host, path, query itd.)
 - metody HTTP określają operacje na danych
 - cookies pozwalają serwerowi „pamiętać” użytkownika
-- wiele ataków wykorzystuje błędy w HTTP
+- HTML Injection wynika z braku walidacji i filtrowania danych  
