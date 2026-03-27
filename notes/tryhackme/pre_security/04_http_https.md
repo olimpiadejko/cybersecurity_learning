@@ -143,6 +143,8 @@ W efekcie:
 2. **Sanityzacja danych (czyszczenie inputu)**  
    Przykład: name.replace(/</g, "<").replace(/>/g, ">");
 
+3. **Walidacja danych**
+
 ---
    
 ## Example Attacks
