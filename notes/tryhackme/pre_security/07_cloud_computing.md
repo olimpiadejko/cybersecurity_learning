@@ -3,7 +3,7 @@
 ## What is cloud computing?
 Cloud computing to korzystanie z serwerów przez internet zamiast na własnym sprzęcie.
 
-👉 zamiast kupować własne serwery:
+zamiast kupować własne serwery:
 - korzystasz z zasobów online  
 - płacisz tylko za użycie  
 
